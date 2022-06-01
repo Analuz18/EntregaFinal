@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+#gradiente {
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(190,201,203,0.14329481792717091) 0%, rgba(181,202,205,1) 26%, rgba(0,212,255,0.5746673669467788) 100%);
+}
 p{
    font-size: 1rem;
    font-family: 'Saira Condensed', sans-serif;
@@ -34,11 +38,11 @@ ul li {
     text-align: center;
 }
 .header{
-    background-image: url(../img/image11.jpg);  
+    /*background-image: url(../img/image11.jpg);  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     top: 0px;
     margin-top: 60px;
     padding: 40px;
