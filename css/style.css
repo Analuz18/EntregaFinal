@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
-#gradiente {
+#gradientes {
    background: rgb(2,0,36);
    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(190,201,203,0.14329481792717091) 0%, rgba(181,202,205,1) 26%, rgba(0,212,255,0.5746673669467788) 100%);
+}
+.centradoCarru{
+   margin: 0 auto;
 }
 p{
    font-size: 1rem;
@@ -21,10 +24,10 @@ font-family: 'Saira Condensed', sans-serif; parrafo*/
 h2{
    padding: 50px;
 }
-img .imgPrin {
+/*img .imgPrin {
    width: 80%;
    height: auto;
-}
+}*/
 .imgInstagram, .imgTwitter {
    width: 50px;
 }
@@ -58,6 +61,7 @@ ul li {
    width: 100%;
    top: 0;
    padding: 10px;
+   z-index: 10;
  }
  .encabezado ul {
     list-style: none;
@@ -170,7 +174,7 @@ footer {
    "aside aside"
    "footer footer"; 
    }
-   
+
 }
 
 
