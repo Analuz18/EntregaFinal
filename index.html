@@ -18,24 +18,38 @@
         <header class="header">
             <h1 class="animate__animated animate__heartBeat">LA MUEBLERIA</h1>
         </header>
-        <nav class="encabezado" >
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="">Productos</a>
-                    <ul>
-                        <li><a href="">Sillones individuales</a></li>
-                        <li><a href="">Juegos de comedor</a></li>
-                        <li><a href="">Sofas</a>
-                            <ul>
-                                <li><a href="pages/pages2.html">2 cuerpos</a></li>
-                                <li><a href="pages/pages3.html">3 cuerpos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-light encabezado col-8">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/armchair_sofa_furniture_seat_icon_209670.png" class="" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
-                <li><a href="#sobreNosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Productos</a>
+                  <ul>
+                    <li><a href="">Sillones individuales</a></li>
+                    <li><a href="">Juegos de comedor</a></li>
+                    <li><a href="">Sofas</a>
+                        <ul>
+                            <li><a href="./pages/pages2.html">2 cuerpos</a></li>
+                            <li><a href="./pages/pages3.html">3 cuerpos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#sobreNosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <main>
             <div id="carouselExampleIndicators" class="carousel slide col-6 centradoCarru " data-bs-ride="carousel">
@@ -47,16 +61,16 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active"> <a href="pages/pages2.html">
-                    <img src="img/image1.jpg" class="d-block w-100" alt="Sillon de 2 cuerpos"></a>
+                    <img src="img/imagen00.jpeg" class="d-block w-100 carruModi " alt="Sillon de 2 cuerpos"></a>
                   </div>
                   <div class="carousel-item">
-                    <a href="pages/pages3.html"><img  class="d-block w-100"src="img/image5.jpg" alt="Sillon de 3 cuerpos"></a>
+                    <a href="pages/pages3.html"><img class="d-block w-100 carruModi" src="img/imagen01.jpeg" alt="Sillon de 3 cuerpos"></a>
                  </div>
                   <div class="carousel-item">
-                    <a href=""><img class="d-block w-100" src="img/image7.jpg" alt="Sillon individual"></a>
+                    <a href=""><img class="d-block w-100 carruModi" src="img/imagen02.jpeg" alt="Sillon individual"></a>
                   </div>
                   <div class="carousel-item">
-                    <a href=""><img class="d-block w-100" src="img/image8.jpg" alt="Juego de Comedor"></a>
+                    <a href=""><img class="d-block w-100 carruModi" src="img/imagen03.jpg" alt="Juego de Comedor"></a>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -71,7 +85,7 @@
             <section id="sobreNosotros">
             <H3>Sobre Nosotros</H3>
             <p class="alineacionTexto">Aqui podras observar un pequeño video sobre el armado de los productos</p>    
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LyLyADePlnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/LyLyADePlnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>        
         </main>
         <footer id="contacto" class="alineacionTexto gridFooter">

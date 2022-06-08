@@ -1,60 +1,79 @@
 *{
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
-#gradientes {
-   background: rgb(2,0,36);
-   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(190,201,203,0.14329481792717091) 0%, rgba(181,202,205,1) 26%, rgba(0,212,255,0.5746673669467788) 100%);
+#gradientes{
+   background-color: #fad0c4;
+   background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+   
 }
 .centradoCarru{
    margin: 0 auto;
 }
 p{
-   font-size: 1rem;
-   font-family: 'Saira Condensed', sans-serif;
+  font-size: 1rem;
+  font-family: 'Saira Condensed', sans-serif;
 }
-h1, h2 , h3{
-   color: rgba(207, 73, 219, 0.699);
-   text-align: center;
-   font-family: 'Playfair Display', serif;
-   font-weight: 500;
-   /*font-family: 'Playfair Display', serif; titulo
+h1, h2 , h3, h5{
+  color: rgba(207, 73, 219, 0.699);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  /*font-family: 'Playfair Display', serif; titulo
 font-family: 'Saira Condensed', sans-serif; parrafo*/
 }
 h2{
-   padding: 50px;
+  padding: 50px;
 }
-/*img .imgPrin {
-   width: 80%;
-   height: auto;
-}*/
 .imgInstagram, .imgTwitter {
-   width: 50px;
+  width: 50px;
 }
 ul li {
-   font-size: 1rem;
-   font-family: 'Saira Condensed', sans-serif;
-   text-align: center;
-   background-color: antiquewhite;
+  font-size: 1rem;
+  font-family: 'Saira Condensed', sans-serif;
+  text-align: center;
+  /* background-color: antiquewhite; */
 }
 .alineacionTexto{
-    text-align: center;
+   text-align: center;
 }
 .header{
-    /*background-image: url(../img/image11.jpg);  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    top: 0px;
-    margin-top: 60px;
-    padding: 40px;
-} 
- .encabezado{
+   top: 0px;
+   margin-top: 60px;
+   padding: 40px;
+}
+.centradoCarru{
+  margin: 0 auto;
+}
+a{
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
+   padding: 10px 20px;
+   display: block;
+}
+a:hover{
+   color: rgba(207, 73, 219, 0.699);
+}
+/* Modifique tamaño de Imagenes */
+.cardsModi {
+  height: 50vh;
+}
+.logo {
+  height: 50px;  
+}
+.carruModi {
+   height: 50vh;
+}
+.navNuevo {
+   text-align: center;
+}
+
+/* Menu */
+.encabezado{
    position: fixed;
    text-align: center;
    padding: 5px;
-   background-color: antiquewhite;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -67,114 +86,109 @@ ul li {
     list-style: none;
     display: flex;
     justify-content: space-between;
- }
- a{
-    text-decoration: none;
-    font-size: 20px;
     color: black;
-    padding: 10px 20px;
-    display: block;
  }
- a:hover{
-    color: white;
- }
- .encabezado ul li ul {
-    display: flex;
-    flex-direction: column;
- }
- .encabezado ul li ul {
-    position: absolute;
- }
- .encabezado ul li ul li {
-    position: relative;
- }
- .encabezado ul li ul li ul{
-    position: absolute;
-    display: none;
- }
- .encabezado ul li ul {
-    display: none;
- }
- .encabezado ul li:hover > ul {
-    display: block;
- }
+.encabezado ul li ul {
+   display: flex;
+   flex-direction: column;
+}
+.encabezado ul li ul {
+   position: absolute;
+}
+.encabezado ul li ul li {
+   position: relative;
+}
+.encabezado ul li ul li ul{
+   position: absolute;
+   display: none;
+}
+.encabezado ul li ul {
+   display: none;
+}
+.encabezado ul li:hover > ul {
+   display: block;
+}
+/* Grid */
 header {
-   grid-area: header;
-   justify-content: center;
+  grid-area: header;
+  justify-content: center;
 }
 nav{
-   display: grid;
-   grid-area: nav;
-   justify-content: center;
+  display: grid;
+  grid-area: nav;
+  justify-content: center;
 }
 main{
-   grid-area: main;
-   justify-content: center;
-   text-align: center;
-   width: 100%;
+  grid-area: main;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 aside {
-   grid-area: aside;
-   justify-content: center;
+  grid-area: aside;
+  justify-content: center;
+  text-align: center;   
    text-align: center;   
+  text-align: center;   
+   text-align: center;   
+  text-align: center;   
 }
 footer {
-   grid-area: footer;
-   justify-content: center;
+  grid-area: footer;
+  justify-content: center;
 }
 .gridPadre {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1 fr);
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "footer footer footer";  
-}
-.gridImageUno, .gridImageDos, .gridImageTres {
-   justify-self: start;
-   align-self: center;
-}
-.gridPagDos {
    display: grid;
    height: 100vh;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(3, 1 fr);
+   grid-template-columns: 1fr;
    grid-template-areas: 
-   "header header header"
-   "nav nav nav"
-   "main main aside"
-   "footer footer footer";  
-}
-@media screen and (max-width: 320px){
-   .gridPagDos {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 
    "header"
    "nav"
    "main"
-   "aside"
-   "footer"; 
-   }
-   footer {
-      display: none;
-   }
+   "footer";  
 }
-@media screen and (max-width: 1024px){
-   .gridPagDos {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 
-   "header header"
-   "nav nav"
-   "main main"
-   "aside aside"
-   "footer footer"; 
-   }
-
+.gridImageUno, .gridImageDos, .gridImageTres {
+  justify-self: start;
+  align-self: center;
+}
+.gridPagDos {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1 fr);
+  grid-template-areas: 
+  "header header header"
+  "nav nav nav"
+  "main main main"
+  "aside footer footer";  
+}
+@media screen and (max-width: 1024px)
+{
+  .gridPagDos {
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-areas: 
+  "header header"
+  "nav nav"
+  "main main"
+  "aside aside"
+  "footer footer"; 
+}
+}
+@media screen and (max-width: 320px){
+  .gridPagDos {
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "aside"
+  "footer";
+  }
+  footer{
+     background-color: black;
+  }
 }
 
 
