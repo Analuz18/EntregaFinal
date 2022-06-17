@@ -1,4 +1,21 @@
 @charset "UTF-8";
+nav, main, aside, footer {
+  justify-content: center; }
+
+ul li ul li ul {
+  position: absolute;
+  display: none; }
+
+ul li:hover > ul {
+  display: block; }
+
+@media screen and (max-width: 320px) {
+  footer {
+    background-color: black; } }
+
+h5 {
+  color: rgba(163, 12, 177, 0.699); }
+
 * {
   margin: 0;
   padding: 0; }
@@ -122,32 +139,23 @@ a:hover {
 
 /* Grid */
 header {
-  grid-area: header;
-  justify-content: center; }
+  grid-area: header; }
 
 nav {
   display: grid;
-  grid-area: nav;
-  justify-content: center; }
+  grid-area: nav; }
 
 main {
   grid-area: main;
-  justify-content: center;
   text-align: center;
   width: 100%; }
 
 aside {
   grid-area: aside;
-  justify-content: center;
-  text-align: center;
-  text-align: center;
-  text-align: center;
-  text-align: center;
   text-align: center; }
 
 footer {
-  grid-area: footer;
-  justify-content: center; }
+  grid-area: footer; }
 
 .gridImageUno, .gridImageDos, .gridImageTres {
   justify-self: start;
@@ -227,18 +235,3 @@ footer {
   .subMenu:hover {
    display: flex;
   } */
-h1, h2, h3, h5 {
-  color: rgba(207, 73, 219, 0.699);
-  font-family: "Playfair Display", serif; }
-
-p {
-  font-family: "Saira Condensed", sans-serif; }
-
-img {
-  width: 50px; }
-
-.videoMofi {
-  border: 0;
-  width: 90%;
-  margin: 0 auto;
-  min-height: 50vh; }

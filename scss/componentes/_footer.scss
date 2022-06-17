@@ -1,1 +1,9 @@
+@media screen and (max-width: 320px) {
+    footer {
+       @include colorPiePagina ($color)
+    }
+}
 
+h5 {
+    color: map-get($footer, colorTitulo);
+}

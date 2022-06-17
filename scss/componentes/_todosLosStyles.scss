@@ -126,31 +126,27 @@ a:hover{
 /* Grid */
 header {
   grid-area: header;
-  justify-content: center;
+   
 }
 nav{
   display: grid;
   grid-area: nav;
-  justify-content: center;
+  @extend %display;
 }
 main{
   grid-area: main;
-  justify-content: center;
+  @extend %display;
   text-align: center;
   width: 100%;
 }
 aside {
   grid-area: aside;
-  justify-content: center;
-  text-align: center;   
-   text-align: center;   
-  text-align: center;   
-   text-align: center;   
-  text-align: center;   
+  @extend %display;
+  text-align: center;    
 }
 footer {
   grid-area: footer;
-  justify-content: center;
+  @extend %display; 
 }
 .gridImageUno, .gridImageDos, .gridImageTres {
    justify-self: start;

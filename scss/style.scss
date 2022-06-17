@@ -1,6 +1,8 @@
 @import"../base/variables";
 @import"../base/listas";
+@import"../scss/base/maps";
+@import"../scss/componentes/extends";
+@import"../scss/componentes/nav.scss";
+@import"../scss/componentes/mixin";
+@import"../scss/componentes/footer";
 @import"../scss/componentes/todosLosStyles";
-@import"../componentes/footer";
-@import"../componentes/paginaTres";
-@import"../scss/componentes/video";
