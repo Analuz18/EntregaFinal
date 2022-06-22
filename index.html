@@ -37,8 +37,8 @@
                     <li><a class="dropdown-item" href="index.html">Juegos de comedor</a></li>
                     <li><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Sillones</a>
                       <ul class="dropdown-menu"class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
-                        <li><a class="dropdown-item" href="./pages/pages2.html">2 cuerpos</a></li>
-                        <li><a class="dropdown-item" href="./pages/pages3.html">3 cuerpos</a></li>
+                        <li><a class="dropdown-item subMenu" href="./pages/pages2.html">2 cuerpos</a></li>
+                        <li><a class="dropdown-item sub" href="./pages/pages3.html">3 cuerpos</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -53,41 +53,8 @@
             </div>
           </div>
         </nav>
-        <main>
-          <!-- Carrusel para Mobile -->
-          <div id="carouselExampleIndicators" class="carousel slide col-12 centradoCarru carruMobile " data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active"> <a href="pages/pages2.html">
-                    <img src="img/imagen00.jpeg" class="d-block w-100  " alt="Sillon de 2 cuerpos"></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href="pages/pages3.html"><img class="d-block w-100 img-fluid" src="img/imagen01.jpeg" alt="Sillon de 3 cuerpos"></a>
-                 </div>
-                  <div class="carousel-item">
-                    <a href=""><img class="d-block w-100 img-fluid" src="img/imagen02.jpeg" alt="Sillon individual"></a>
-                  </div>
-                  <div class="carousel-item">
-                    <a href=""><img class="d-block w-100 img-fluid" src="img/imagen03.jpg" alt="Juego de Comedor"></a>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <!-- Finaliza carrusel para Mobile -->
-              <!-- Inica carrusel Desktop -->
-              <div id="carouselExampleIndicators" class="carousel slide col-6 centradoCarru " data-bs-ride="carousel">
+        <main class="row">
+              <div id="carouselExampleIndicators" class="carousel slide centradoCarru col col-md-8 mx-auto " data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -96,16 +63,16 @@
                 </div>
                 <div class="carousel-inner carruModi">
                   <div class="carousel-item active"> <a href="pages/pages2.html">
-                    <img src="img/imagen00.jpeg" class="d-block w-100  " alt="Sillon de 2 cuerpos"></a>
+                    <img src="img/imagen00.jpeg" class="d-block w-100 imgCarru " alt="Sillon de 2 cuerpos"></a>
                   </div>
                   <div class="carousel-item">
-                    <a href="pages/pages3.html"><img class="d-block w-100 img-fluid" src="img/imagen01.jpeg" alt="Sillon de 3 cuerpos"></a>
+                    <a href="pages/pages3.html"><img class="d-block w-100 imgCarru" src="img/imagen01.jpeg" alt="Sillon de 3 cuerpos"></a>
                  </div>
                   <div class="carousel-item">
-                    <a href=""><img class="d-block w-100 img-fluid" src="img/imagen02.jpeg" alt="Sillon individual"></a>
+                    <a href=""><img class="d-block w-100 imgCarru" src="img/imagen02.jpeg" alt="Sillon individual"></a>
                   </div>
                   <div class="carousel-item">
-                    <a href=""><img class="d-block w-100 img-fluid" src="img/imagen03.jpg" alt="Juego de Comedor"></a>
+                    <a href=""><img class="d-block w-100 imgCarru" src="img/imagen03.jpg" alt="Juego de Comedor"></a>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -117,19 +84,20 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            </section>
             <section id="sobreNosotros">
             <H3>Sobre Nosotros</H3>
             <p class="alineacionTexto">Aqui podras observar un pequeño video sobre el armado de los productos</p>    
-            <iframe src="https://www.youtube.com/embed/LyLyADePlnQ" title="YouTube video player" class="videoModi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>        
+            <iframe src="https://www.youtube.com/embed/LyLyADePlnQ" title="YouTube video player" class="videoModi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
         </main>
         <footer id="contacto" class="alineacionTexto gridFooter">
-          <p><a href="pages/pages4.html">------------------Todos Nuestros Productos----------------</a></p>
+            <p><a href="pages/pages4.html">------------------Todos Nuestros Productos----------------</a></p>
             <p>----------------------</p>
             <H5>CONTACTANOS</H5>
             <P>3816892754</P>
             <p>analuzmartinezana@gmail.com</p>
             <p>Copyright La Muebleria - 2022. Todos los derechos reservados.</p>
+            <p><a href="./pages/formulario.html">Dejanos tu OPINION</a></p>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -24,30 +24,16 @@ h5 {
   background-color: #fad0c4;
   background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%); }
 
-.centradoCarru {
-  margin: 0 auto; }
-
 .videoModi {
   border: 0;
   width: 50%;
   margin: 0 auto;
   min-height: 50vh; }
 
-/* .menuMobile{
-   display: none;
-} */
 p {
   font-size: 1rem;
   font-family: 'Saira Condensed', sans-serif; }
 
-/*h1, h2 , h3, h5{
-  color: rgba(207, 73, 219, 0.699);
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-family: 'Playfair Display', serif; titulo
-font-family: 'Saira Condensed', sans-serif; parrafo
-}*/
 h2 {
   padding: 50px; }
 
@@ -57,8 +43,7 @@ h2 {
 ul li {
   font-size: 1rem;
   font-family: 'Saira Condensed', sans-serif;
-  text-align: center;
-  /* background-color: antiquewhite; */ }
+  text-align: end; }
 
 .alineacionTexto {
   text-align: center; }
@@ -67,12 +52,6 @@ ul li {
   top: 0px;
   margin-top: 60px;
   padding: 40px; }
-
-.centradoCarru {
-  margin: 0 auto; }
-
-.carruMobile {
-  display: none; }
 
 a {
   text-decoration: none;
@@ -92,50 +71,74 @@ a:hover {
   height: 50px; }
 
 .carruModi {
-  height: 80vh;
+  max-width: 100%;
   width: 100%; }
 
-.navNuevo {
-  text-align: center; }
+/*Modifiacion de cards*/
+.mi-card {
+  margin: 20px;
+  max-width: 100%;
+  border-radius: 20px; }
+
+.mi-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; }
+
+/*Formulario*/
+.form {
+  width: 340px;
+  height: 440px;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Saira Condensed", sans-serif;
+  position: relative; }
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Saira Condensed", sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid black; }
+
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: rgba(207, 73, 219, 0.699); }
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Saira Condensed", sans-serif;
+  background: 0;
+  color: rgba(207, 73, 219, 0.699);
+  cursor: pointer;
+  transition: all .3s; }
+
+button:hover {
+  color: black; }
 
 /* Menu */
 .encabezado {
   position: fixed;
-  text-align: center;
+  text-align: left;
   padding: 5px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: end;
+  align-items: left;
   width: 100%;
   top: 0;
   padding: 10px;
   z-index: 10; }
-
-.encabezado ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  color: black; }
-
-.encabezado ul li ul {
-  display: flex;
-  flex-direction: column; }
-
-.encabezado ul li ul {
-  position: absolute; }
-
-.encabezado ul li ul li {
-  position: relative; }
-
-.encabezado ul li ul li ul {
-  position: absolute;
-  display: none; }
-
-.encabezado ul li ul {
-  display: none; }
-
-.encabezado ul li:hover > ul {
-  display: block; }
 
 /* Grid */
 header {
@@ -175,7 +178,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .gridPagDos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "header header" "nav nav" "main main" "aside aside" "footer footer"; } }
 
@@ -185,53 +188,4 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "header" "nav" "main" "aside" "footer"; }
   footer {
-    background-color: black; }
-  .carruMobile {
-    display: flex; }
-  .carruModi {
-    display: none; } }
-
-/*
-  .menuDesktop {
-   display: none;
-  }
-   .menuMobile {
-      position: fixed;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   width: 100%;
-   top: 0;
-   padding: 10px;
-   z-index: 10;
-  }
- }
- .menuMobile ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    color: black;
- }
-.menuMobile ul li ul {
-   display: flex;
-   flex-direction: column;
-}
-.menuMobile ul li ul {
-   position: absolute;
-}
-.menuMobile ul li ul li {
-   position: relative;
-}
-.menuMobile ul li ul li ul{
-   position: absolute;
-   display: none;
-}
-.menuMobile ul li ul {
-   display: none;
-}
-.menuMobile ul li:hover > ul {
-   display: block;
-}
-  .subMenu:hover {
-   display: flex;
-  } */
+    background-color: black; } }
