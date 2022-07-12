@@ -9,10 +9,6 @@ ul li ul li ul {
 ul li:hover > ul {
   display: block; }
 
-@media screen and (max-width: 320px) {
-  footer {
-    background-color: black; } }
-
 h5 {
   color: rgba(163, 12, 177, 0.699); }
 
@@ -51,7 +47,10 @@ ul li {
 .header {
   top: 0px;
   margin-top: 60px;
-  padding: 40px; }
+  padding: 20px;
+  z-index: 10;
+  font-family: "Playfair Display", serif;
+  color: rgba(207, 73, 219, 0.699); }
 
 a {
   text-decoration: none;
@@ -87,8 +86,8 @@ a:hover {
 
 /*Formulario*/
 .form {
-  width: 340px;
-  height: 440px;
+  width: 50%;
+  height: 50%;
   border-radius: 4px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -114,24 +113,21 @@ p:before {
   font-size: 14px;
   color: rgba(207, 73, 219, 0.699); }
 
-button {
+.botonModificado {
+  border-radius: 12px;
+  box-shadow: rgba(250, 93, 93, 0.2);
   float: right;
-  padding: 8px 12px;
-  margin: 8px 0 0;
+  padding: 8px;
+  margin: 8px 0;
   font-family: "Saira Condensed", sans-serif;
   background: 0;
   color: rgba(207, 73, 219, 0.699);
-  cursor: pointer;
   transition: all .3s; }
-
-button:hover {
-  color: black; }
 
 /* Menu */
 .encabezado {
-  position: fixed;
+  position: sticky;
   text-align: left;
-  padding: 5px;
   display: flex;
   justify-content: end;
   align-items: left;
@@ -166,13 +162,11 @@ footer {
 
 .gridPadre {
   display: grid;
-  height: 100vh;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "nav" "main" "footer"; }
 
 .gridPagDos {
   display: grid;
-  height: 100vh;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "header header header" "nav nav nav" "main main main" "aside footer footer"; }
 
@@ -187,5 +181,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "header" "nav" "main" "aside" "footer"; }
-  footer {
-    background-color: black; } }
+  .videoModi {
+    width: 100%; }
+  .form {
+    width: 100%; } }
