@@ -53,7 +53,7 @@
 
 /*Lista de precios de todos los productos ubicados en la pagina todos.html*/
 
-const productos= [
+const articulo= [
     {
         sku:"1",
         titulo:"Sillon de 2 cuerpos Bari",
@@ -75,7 +75,47 @@ const productos= [
         precio: 60000
     }
 ];
-for(const producto of productos){
-    console.log(productos.titulo);
-    console.log(productos.precio);
+for(const sku of articulo){
+    console.log(sku.titulo);
+    console.log(sku.precio);
 }
+/*Arrays*/
+class Producto {
+    constructor(nombre, precio) {
+        this.nombre  = nombre.toUpperCase();
+        this.precio  = parseFloat(precio);
+        this.vendido = false;
+    }
+    sumaIva() {
+        this.precio = this.precio * 1.21;
+    }
+}
+const productos = [];
+productos.push(new Producto("sillon 2 cuerpos Marsalla", "58000"));
+productos.push(new Producto("sillon 2 cuerpos Berlin Vison", "60000"));
+productos.push(new Producto("sillon 2 cuerpos Berlin Topo", "60000"));
+console.log("lista de productos:");
+console.log(productos);
+for (const producto of productos)
+    producto.sumaIva();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
